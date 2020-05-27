@@ -1,0 +1,14 @@
+{
+  "name": "@company/core",
+  "version": "0.0.0",
+  "description": "Base dependencies required by all packages",
+  "main": "index.js",
+  "author": "Ryosuke",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "styled-components": "^5.1.1"
+  }
+}
