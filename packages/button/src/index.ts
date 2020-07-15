@@ -1,3 +1,3 @@
-import Button from "./src";
+import Button from "./button";
 
 export { Button };
