@@ -4,6 +4,7 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "removeComments": true,
     "strict": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
