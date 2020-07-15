@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Ryosuke",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
   "dependencies": {
     "zenny-ui-core": "^0.0.0"
   }
