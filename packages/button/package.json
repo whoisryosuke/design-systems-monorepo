@@ -6,6 +6,6 @@
   "author": "Ryosuke",
   "license": "MIT",
   "dependencies": {
-    "@company/core": "^0.0.0"
+    "zenny-ui-core": "^0.0.0"
   }
 }
