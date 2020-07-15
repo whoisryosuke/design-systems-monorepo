@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "publish": "lerna publish",
+    "build": "lerna run build",
+    "dev": "lerna run dev",
+    "publish": "lerna run build && lerna publish",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
