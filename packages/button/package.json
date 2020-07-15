@@ -1,5 +1,5 @@
 {
-  "name": "@company/button",
+  "name": "zenny-ui-button",
   "version": "0.0.0",
   "description": "An interactive element that accepts click based user input",
   "main": "index.js",

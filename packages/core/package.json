@@ -1,5 +1,5 @@
 {
-  "name": "@company/core",
+  "name": "zenny-ui-core",
   "version": "0.0.0",
   "description": "Base dependencies required by all packages",
   "main": "index.js",

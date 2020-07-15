@@ -1,5 +1,5 @@
 {
-  "name": "design-systems-monorepo",
+  "name": "zenny-ui",
   "private": true,
   "workspaces": [
     "packages/*"
