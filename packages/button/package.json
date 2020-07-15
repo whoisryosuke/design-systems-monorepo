@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "description": "An interactive element that accepts click based user input",
   "main": "lib/index.js",
+  "typings": "src/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
   "author": "Ryosuke",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -d",
     "dev": "tsc --watch"
   },
   "dependencies": {
