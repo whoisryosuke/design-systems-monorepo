@@ -1,37 +1,30 @@
 import React from "react";
+// Ignore because SC type pkg is broken for now
+// @ts-ignore
 import styled from "styled-components";
+import { compose, typography, space, color, layout } from "styled-system";
 import {
-  compose,
-  typography,
-  space,
-  color,
-  layout,
-  variant,
-} from "styled-system";
+  SizeProp,
+  sizeVariants,
+  AppearanceProp,
+  appearanceVariants,
+} from "zenny-ui-variants";
 
-type ButtonProps = {
+type ButtonProps = JSX.IntrinsicElements["button"] & {
   children: React.ReactNode;
   onClick: () => void;
+  size: SizeProp;
+  appearance: AppearanceProp;
 };
 
-const Button = styled("button")(
+const Button = styled("button")<ButtonProps>(
   {
     appearance: "none",
     fontFamily: "inherit",
     backgroundColor: "teal",
   },
-  variant({
-    variants: {
-      primary: {
-        color: "white",
-        bg: "green",
-      },
-      secondary: {
-        color: "white",
-        bg: "orange",
-      },
-    },
-  }),
+  sizeVariants,
+  appearanceVariants,
   compose(typography, space, color, layout)
 );
 
