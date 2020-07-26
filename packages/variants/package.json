@@ -1,0 +1,41 @@
+{
+  "name": "zenny-ui-variants",
+  "version": "0.0.0",
+  "description": "Variant styles shared across components",
+  "keywords": [
+    "css",
+    "in",
+    "js",
+    "theme",
+    "variants",
+    "styled",
+    "system"
+  ],
+  "author": "Ryosuke <ryosuke.san.hana@gmail.com>",
+  "homepage": "https://github.com/whoisryosuke/design-systems-monorepo#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "module": "src/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisryosuke/design-systems-monorepo.git"
+  },
+  "scripts": {
+    "build": "tsc -d",
+    "dev": "tsc --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/whoisryosuke/design-systems-monorepo/issues"
+  },
+  "dependencies": {
+    "zenny-ui-core": "^0.0.0"
+  }
+}
