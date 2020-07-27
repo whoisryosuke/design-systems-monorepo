@@ -19,5 +19,10 @@
     "baseUrl": "./",
     "moduleResolution": "node"
   },
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.stories.[tj]sx",
+    "**/*.test.[tj]s"
+  ]
 }
