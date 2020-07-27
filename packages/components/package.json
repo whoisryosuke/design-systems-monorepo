@@ -1,0 +1,38 @@
+{
+  "name": "zenny-ui-components",
+  "version": "0.0.0",
+  "description": "All UI components from the Zenny UI design system",
+  "keywords": [
+    "components",
+    "react-components",
+    "styled-components",
+    "styled-system",
+    "ui"
+  ],
+  "author": "Ryosuke <ryosuke.san.hana@gmail.com>",
+  "homepage": "https://github.com/whoisryosuke/design-systems-monorepo#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisryosuke/design-systems-monorepo.git"
+  },
+  "scripts": {
+    "build": "tsc -d",
+    "dev": "tsc --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/whoisryosuke/design-systems-monorepo/issues"
+  },
+  "dependencies": {
+    "zenny-ui-box": "^0.0.0",
+    "zenny-ui-button": "^0.0.0"
+  }
+}
