@@ -16,7 +16,8 @@
     "target": "esnext",
     "jsx": "react",
     "lib": ["dom", "es2015", "es2017"],
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "moduleResolution": "node"
   },
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
