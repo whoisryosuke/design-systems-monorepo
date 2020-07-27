@@ -1,3 +1,3 @@
-import Button from "./button";
+import {Button, ButtonProps} from "./button";
 
 export { Button };

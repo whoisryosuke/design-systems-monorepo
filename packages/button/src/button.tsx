@@ -16,7 +16,7 @@ export interface ButtonProps
   appearance: AppearanceProp;
 }
 
-const Button = styled(Box).attrs(() => ({
+export const Button = styled(Box).attrs(() => ({
   // Define props on top of Box
   // Set underlying element as button
   as: "button",
@@ -29,5 +29,3 @@ const Button = styled(Box).attrs(() => ({
   sizeVariants,
   appearanceVariants
 );
-
-export default Button;
