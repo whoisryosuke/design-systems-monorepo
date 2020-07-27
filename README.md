@@ -1,6 +1,13 @@
 # Zenny UI
 
-# Getting Started
+React Components using Styled Components and "utility props" (like `marginTop={3}`)
+
+## Components
+
+- Box
+- Button
+
+## Getting Started
 
 1. Install the UI Library: `yarn add zenny-ui-components`
 2. Use a component:
@@ -12,20 +19,28 @@
    return <Button>Submit</Button>;
    ```
 
-# Development
+## Development
 
 This project is bootstrapped using Lerna and Yarn to create a monorepo structure (one repo containing many, often connected modules). Each folder inside the `packages` folder is a different module, like the button component, or utility functions used across different modules.
 
-## Installation
+### Installation
 
 1. Install dependencies in the root of the repo: `yarn`
 1. Run Typescript to build on each file save: `yarn dev`
 
-## Creating New Packages
+### Project Structure
+
+This project is a monorepo made up of several packages, from individual components to utility functions. These packages are often "linked" together to allow us to isolate and modularize functionality and orchestrate them together. This is a fancy way of saying we have a bunch of NPM packages under one repo roof and they usually depend on eachother.
+
+**Notable Packages:**
+
+- **core** - This is used by most components to provide common shared dependencies like React and Styled Components.
+- **variants** - This is used by most components to add "variant" props to components that alter the style (like `<zenny-button appearance="primary">`).
+- **components** - This package exports all the individual component from one place.
 
 ### Package Structure:
 
-Here is the general structure of a module or "package" contained in the `/packages` directory. _This may be different for utility packages._
+Here is the general structure of a module or "package" contained in the `/packages` directory. _This may be slightly different for utility packages._
 
 ```
 packages/component-name
@@ -46,6 +61,8 @@ packages/component-name
 │   └── index.ts
 └── 📄 tsconfig.json
 ```
+
+### Creating New Packages
 
 **Use Lerna CLI to create package:**
 
@@ -73,7 +90,7 @@ packages/component-name
 }
 ```
 
-2. Add the types file and build scripts to the `package.json`:
+2. Add the typings file and build scripts to the `package.json`:
 
 ```json
 {
@@ -103,3 +120,8 @@ You can build separate packages by navigating to the package and running the bui
 1. `yarn build`
 
 This will run the build process locally, and give you better, syntax highlighted, error messaging.
+
+# Thanks
+
+- [design-systems-monorepo](https://github.com/whoisryosuke/design-systems-monorepo)
+- [Theme UI](https://github.com/system-ui/theme-ui/blob/master/packages/components/index.d.ts)
