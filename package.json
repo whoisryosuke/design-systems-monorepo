@@ -1,5 +1,13 @@
 {
   "name": "zenny-ui",
+  "description": "All UI components from the Zenny UI design system",
+  "keywords": [
+    "components",
+    "react-components",
+    "styled-components",
+    "styled-system",
+    "ui"
+  ],
   "private": true,
   "workspaces": [
     "packages/*"
