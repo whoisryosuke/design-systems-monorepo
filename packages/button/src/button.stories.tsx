@@ -1,4 +1,6 @@
 import React from "react";
+// Ignore because SC type pkg is broken for now
+// @ts-ignore
 import styled from "styled-components";
 import { variant } from "styled-system";
 import { action } from "@storybook/addon-actions";
