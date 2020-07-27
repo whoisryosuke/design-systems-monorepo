@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { variant } from "styled-system";
 import { action } from "@storybook/addon-actions";
-import Button from "./button";
+import Button from "../src/button";
 
 export default {
   title: "Button",
